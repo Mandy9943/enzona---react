@@ -43,6 +43,7 @@ export interface IUserBankAccounts {
 }
 
 export interface IUserNotification {
+  readed: boolean;
   name: string;
   money_amount?: number;
   date: Date;

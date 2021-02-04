@@ -113,6 +113,7 @@ export const users: IUser[] = [
         date: new Date(),
         status: true,
         hour: "11.:52 pm",
+        readed: true,
       },
       {
         name: "Tranferencia recibida",
@@ -120,11 +121,13 @@ export const users: IUser[] = [
         date: new Date(),
         status: true,
         hour: "10.:22 am",
+        readed: true,
       },
       {
         name: "Soicitud aceptada",
         date: new Date(),
         hour: "7.:52 pm",
+        readed: false,
       },
       {
         name: "Tranferencia recibida",
@@ -132,6 +135,7 @@ export const users: IUser[] = [
         date: new Date(),
         status: true,
         hour: "6.:03 pm",
+        readed: true,
       },
     ],
   },

@@ -1,0 +1,119 @@
+.panel-header {
+  width: 100%;
+  height: 120px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00334f+6,16c6e5+34,4b966d+53,00334f+96 */
+  background: rgb(0, 51, 79); /* Old browsers */
+  background: -moz-linear-gradient(
+    30deg,
+    rgba(0, 51, 79, 1) 6%,
+    rgb(6, 146, 156) 34%,
+    rgb(50, 114, 79) 53%,
+    rgba(0, 51, 79, 1) 96%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    30deg,
+    rgba(0, 51, 79, 1) 6%,
+    rgb(6, 146, 156) 34%,
+    rgb(50, 114, 79) 53%,
+    rgba(0, 51, 79, 1) 96%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    30deg,
+    rgba(0, 51, 79, 1) 6%,
+    rgb(6, 146, 156) 34%,
+    rgb(50, 114, 79) 53%,
+    rgba(0, 51, 79, 1) 96%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00334f', endColorstr='#00334f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border: 0px;
+  border-radius: 0 0 15% 15%;
+  box-shadow: inset 0 -5px 8px 0px black;
+}
+.panel-header-shadow {
+  margin-bottom: 5px;
+}
+
+/* Estilos para el home */
+.panel-header-list {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-header-list-item i {
+  font-size: 70px;
+}
+
+.panel-header-list-item a {
+  color: white;
+}
+.header-panel-item-caption {
+  margin-top: 7px;
+}
+
+/* EStilos para config */
+
+.panel-header-content {
+  padding: 8px 12px;
+}
+
+.panel-header-person {
+  color: white;
+}
+
+.panel-header-perfil {
+  padding-top: 8px;
+  display: flex;
+}
+
+.panel-header-user-image {
+  position: relative;
+  width: 70px;
+}
+.panel-header-user-image img {
+  width: 70px;
+  border-radius: 50%;
+}
+.panel-header-user-image .user-error {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--danger);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.panel-header-user-general-info {
+  margin-left: 10px;
+  position: relative;
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.panel-header-user-general-info .fullname {
+  font-size: 15px;
+}
+.panel-header-user-general-info .username,
+.tel {
+  font-size: 12px;
+}
+
+.panel-header-user-general-info .more-info a {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 30px;
+  padding: 8px 12px;
+  color: white;
+}
