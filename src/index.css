@@ -44,7 +44,8 @@ body {
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
-  --light: #f8f9fa;
+  --light: #ebebeb;
+  --light-gray: rgba(128, 128, 128, 0.445);
   --dark: #343a40;
 }
 

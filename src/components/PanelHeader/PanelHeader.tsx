@@ -32,24 +32,26 @@ const PanelHeader: React.FC<IProps> = ({ place }) => {
         ) : (
           <div className="panel-header-content wrapper">
             <div className="panel-header-person">Yo</div>
-            <div className="panel-header-perfil">
-              <div className="panel-header-user-image">
-                <img src="dist/images/avatar1.png" alt="Foto de usuario" />
-                <div className="user-error text-center">
-                  <i className="icon-cross "></i>
+            <Link to="">
+              <div className="panel-header-perfil">
+                <div className="panel-header-user-image">
+                  <img src="dist/images/avatar1.png" alt="Foto de usuario" />
+                  <div className="user-error text-center">
+                    <i className="icon-cross "></i>
+                  </div>
+                </div>
+                <div className="panel-header-user-general-info">
+                  <div className="fullname">Armando Martin Calderon</div>
+                  <div className="username">acalderon135</div>
+                  <div className="tel">54233256</div>
+                  <div className="more-info">
+                    <Link to="">
+                      <i className="icon-angle-right"></i>{" "}
+                    </Link>
+                  </div>
                 </div>
               </div>
-              <div className="panel-header-user-general-info">
-                <div className="fullname">Armando Martin Calderon</div>
-                <div className="username">acalderon135</div>
-                <div className="tel">54233256</div>
-                <div className="more-info">
-                  <Link to="">
-                    <i className="icon-angle-right"></i>{" "}
-                  </Link>
-                </div>
-              </div>
-            </div>
+            </Link>
           </div>
         )}
       </div>

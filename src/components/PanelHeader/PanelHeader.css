@@ -1,4 +1,7 @@
 .panel-header {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 120px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00334f+6,16c6e5+34,4b966d+53,00334f+96 */

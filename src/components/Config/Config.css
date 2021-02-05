@@ -1,0 +1,57 @@
+.config-options {
+  width: 100%;
+}
+
+.firsts-options {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--light-gray);
+  background-color: white;
+  padding-top: 20px;
+}
+
+.option-content {
+  display: flex;
+  height: 45px;
+  align-items: center;
+  padding: 0 0 0 12px;
+  font-size: 16px;
+}
+
+.f-i {
+  flex: 10%;
+  font-size: 25px;
+}
+
+.firsts-options .option-text {
+  align-items: baseline;
+  flex: 90%;
+  display: flex;
+  padding-bottom: 12px;
+  margin-bottom: -12px;
+  border-bottom: 1px solid var(--light-gray);
+}
+.option-text p {
+  flex: 95%;
+}
+
+.option-text .s-i {
+  flex: 5%;
+  font-size: 25px;
+  color: var(--gray);
+}
+
+.option {
+  background: white;
+  margin-top: 8px;
+  height: 45px;
+  border-bottom: 1px solid var(--light-gray);
+}
+.option .option-text {
+  align-items: baseline;
+  flex: 90%;
+  display: flex;
+  padding-bottom: 12px;
+  margin-bottom: -12px;
+}

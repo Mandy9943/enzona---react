@@ -1,10 +1,8 @@
-.home-panel {
-  background-color: white;
-}
-
 .panel-body {
   height: 220px;
   border-bottom: 0.2px solid rgb(163, 163, 163);
+  background: white;
+  padding-top: 20px;
 }
 
 .panel-body-list {
@@ -12,6 +10,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 15px 0px 5px;
+  align-items: baseline;
 }
 
 .panel-body-list-item {
