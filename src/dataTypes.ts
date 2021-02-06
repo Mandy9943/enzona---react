@@ -44,10 +44,13 @@ export interface IUserBankAccounts {
 
 export interface IUserNotification {
   readed: boolean;
+  image: string;
   name: string;
   money_amount?: number;
-  date: Date;
-  status?: boolean;
+  date: string;
+  currency: "cup" | "usd";
+  notification: string;
+  status?: "Aceptada" | "Fallida" | "Pendiente";
   hour: string /* Pendiente a revision */;
 }
 
