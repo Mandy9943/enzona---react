@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8px 15px 0;
+  padding: 8px 0 0 0;
 }
 
 .panel-body-list-item img {

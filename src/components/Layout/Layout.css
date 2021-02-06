@@ -6,9 +6,10 @@
 
 .content-page {
   padding-top: 100px;
-  width: 480px;
-  height: 600px;
+  width: 90%;
+  height: 70vh;
   margin: 30px auto;
+  overflow: auto;
   border: 1px solid gray;
   position: relative;
   padding-bottom: 55px;

@@ -46,7 +46,9 @@ body {
   --danger: #dc3545;
   --light: #ebebeb;
   --light-gray: rgba(128, 128, 128, 0.445);
+  --very-light-gray: rgba(128, 128, 128, 0.171);
   --dark: #343a40;
+  --darkBlue: rgb(0, 0, 199);
 }
 
 ul {

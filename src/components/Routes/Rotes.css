@@ -4,7 +4,7 @@
 }
 .animate-enter-active {
   opacity: 1;
-  transition: opacity 450ms ease-in;
+  transition: opacity 100ms ease-in;
 }
 .animate-exit {
   display: none;

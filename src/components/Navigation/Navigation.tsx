@@ -26,7 +26,7 @@ const Navigation: React.FC<{}> = () => {
 
         <li className="navbar-item">
           <NavLink
-            to="/friends"
+            to="/friends/friend"
             className="navbar-link"
             activeClassName="nav-active"
           >

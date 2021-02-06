@@ -1,0 +1,14 @@
+.navbar-fried {
+  display: flex;
+  height: 100%;
+}
+
+.navbar-fried a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.friend-nav-active {
+}

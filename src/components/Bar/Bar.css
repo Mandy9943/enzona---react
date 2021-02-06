@@ -1,0 +1,11 @@
+.bar {
+  margin-top: -55px;
+  height: 45px;
+}
+.boder-bottom {
+  border-bottom: 1px solid var(--light-gray);
+}
+.friend-nav-active {
+  color: var(--blue);
+  border-bottom: 2px solid var(--blue);
+}
