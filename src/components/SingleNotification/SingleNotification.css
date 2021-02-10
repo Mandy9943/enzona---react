@@ -1,0 +1,89 @@
+.single-notification {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+  padding: 0 12px;
+}
+
+.single-notification > .img-notification {
+  flex: 20%;
+  text-align: center;
+}
+.img-notification > img {
+  border-radius: 50%;
+  width: 70%;
+}
+.single-notification > div {
+  flex: 80%;
+}
+
+.content-single-notification {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--very-light-gray);
+  padding-bottom: 8px;
+  height: 70px;
+}
+
+.text-header-single-notification {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.text-header-single-notification .notification {
+  flex: 1;
+}
+
+.price-currency {
+  color: var(--gray);
+  font-size: 14px;
+}
+
+.body-single-notification {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--gray);
+}
+
+.footer-single-notification {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--gray);
+}
+
+.status-operation {
+  color: white;
+  background-color: var(--green);
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 1px 3px;
+}
+
+@media only screen and (min-width: 550px) {
+  .single-notification > .img-notification {
+    flex: 14%;
+  }
+  .single-notification > div {
+    flex: 86%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .single-notification > .img-notification {
+    flex: 10%;
+  }
+  .single-notification > div {
+    flex: 90%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .single-notification > .img-notification {
+    flex: 8%;
+  }
+  .single-notification > div {
+    flex: 92%;
+  }
+}

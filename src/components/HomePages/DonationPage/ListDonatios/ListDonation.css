@@ -1,0 +1,6 @@
+.list-donation {
+  overflow: auto;
+  height: 100%;
+  background-color: var(--white);
+  flex: 1;
+}

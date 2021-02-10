@@ -10,7 +10,7 @@ const Home: React.FC<{}> = () => {
       <div className="panel-body">
         <ul className="panel-body-list">
           <li className="panel-body-list-item">
-            <Link to="">
+            <Link to="/transfer">
               <img
                 src="dist/images/transferir_min.png"
                 alt="Foto de tranferir dinero mediante tarjetas"
@@ -19,7 +19,7 @@ const Home: React.FC<{}> = () => {
             <div className="caption">Transferir</div>
           </li>
           <li className="panel-body-list-item">
-            <Link to="">
+            <Link to="/balance-cards">
               <img
                 src="dist/images/saldo.png"
                 alt="Foto de tranferir dinero mediante tarjetas"
@@ -28,7 +28,7 @@ const Home: React.FC<{}> = () => {
             <div className="caption">Saldo</div>
           </li>
           <li className="panel-body-list-item">
-            <Link to="">
+            <Link to="/operations-cards">
               <img
                 src="dist/images/operacioens.png"
                 alt="Foto de tranferir dinero mediante tarjetas"
@@ -46,7 +46,7 @@ const Home: React.FC<{}> = () => {
             <div className="caption">Solicitar Tarjetas</div>
           </li>
           <li className="panel-body-list-item">
-            <Link to="">
+            <Link to="/gifts">
               <img
                 src="dist/images/regalos.png"
                 alt="Foto de tranferir dinero mediante tarjetas"
@@ -55,7 +55,7 @@ const Home: React.FC<{}> = () => {
             <div className="caption">Regalos</div>
           </li>
           <li className="panel-body-list-item">
-            <Link to="">
+            <Link to="/donations">
               <img
                 src="dist/images/donar_3.png"
                 alt="Foto de tranferir dinero mediante tarjetas"
@@ -64,7 +64,7 @@ const Home: React.FC<{}> = () => {
             <div className="caption">Donar</div>
           </li>
           <li className="panel-body-list-item">
-            <Link to="">
+            <Link to="/electricity">
               <img
                 src="dist/images/electricidad_1.png"
                 alt="Foto de tranferir dinero mediante tarjetas"
@@ -73,7 +73,7 @@ const Home: React.FC<{}> = () => {
             <div className="caption">Electricidad</div>
           </li>
           <li className="panel-body-list-item">
-            <Link to="">
+            <Link to="/electricity">
               <img
                 src="dist/images/transferir_min.png"
                 alt="Foto de tranferir dinero mediante tarjetas"

@@ -1,7 +1,7 @@
-type sex_type = "M" | "F";
-type bank_type = "Banco Metropolitano" | "BANDEC" | "BPA";
-type curreny_type = "CUP" | "USD";
-type operation_way_type = "Crédito" | "Débito";
+export type sex_type = "M" | "F";
+export type bank_type = "Banco Metropolitano" | "BANDEC" | "BPA";
+export type currency_type = "CUP" | "USD";
+export type operation_way_type = "Crédito" | "Débito";
 
 interface IUserInfo {
   fullname: string;
@@ -27,16 +27,17 @@ export interface IOperation {
 }
 
 export interface IUserBankAccount {
+  id: number;
   bank: bank_type;
   name: string;
-  currency: curreny_type;
+  currency: currency_type;
   number: number;
   active: boolean;
-  avilable_money: number;
-  contable_money: number;
-  card: string;
-  number_account: number;
-  last_operations: IOperation[];
+  avilable_money?: number;
+  contable_money?: number;
+  card?: string;
+  number_account?: number;
+  last_operations?: IOperation[];
 }
 export interface IUserBankAccounts {
   accounts: IUserBankAccount[];

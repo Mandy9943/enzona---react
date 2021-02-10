@@ -9,7 +9,7 @@ import RequestComponent from "./RequestComponent/RequestComponent";
 const Friends: React.FC<{}> = () => {
   return (
     <div>
-      <HeaderBar place="friend" />
+      <HeaderBar place="friend" boldText="+" boldLink="/friend-add" />
       <Bar whithoutBorderBottom={true}>
         <div className="navbar-fried">
           <NavLink to="/friends/friend" activeClassName="friend-nav-active">

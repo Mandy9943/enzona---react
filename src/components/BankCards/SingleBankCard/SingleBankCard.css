@@ -1,0 +1,48 @@
+.single-bank-card {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(#c9c7c7, #7c8075);
+  border-radius: 6px;
+  box-shadow: 0 5px 5px #484d4b;
+  margin-bottom: 12px;
+  max-width: 500px;
+  min-width: 253px;
+}
+
+.bank-name {
+  width: 80%;
+  background-color: #00bb2d;
+  height: 25%;
+  border-radius: 6px 0;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.card-content {
+  display: flex;
+  height: 50%;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.card-content .triangle {
+  width: 0;
+  height: 0;
+  border-right: 7px solid #00bb2d;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  margin-right: 40px;
+}
+.card-content .number {
+  font-size: 25px;
+}
+.footer-card {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-card .name {
+  width: 80%;
+}

@@ -1,0 +1,41 @@
+.balance {
+  margin-top: -55px;
+  height: 100%;
+}
+.balance-header {
+  background-color: var(--white);
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--light-gray);
+  padding: 15px 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+}
+.balance-number {
+  height: 60%;
+  margin: auto;
+}
+.balance-number .amount {
+  font-size: 32px;
+}
+
+.balance-currency {
+  font-size: 60%;
+}
+
+.balance-caption {
+  text-align: center;
+  font-size: 15px;
+  color: var(--gray);
+  margin-top: 5px;
+}
+
+.balance-header-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance-header-bottom .amount {
+  color: var(--gray);
+}

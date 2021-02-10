@@ -1,0 +1,9 @@
+.list-notifications {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  overflow: auto;
+  flex: 1;
+  height: 100%;
+}

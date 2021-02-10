@@ -45,9 +45,7 @@ const PanelHeader: React.FC<IProps> = ({ place }) => {
                   <div className="username">acalderon135</div>
                   <div className="tel">54233256</div>
                   <div className="more-info">
-                    <Link to="">
-                      <i className="icon-angle-right"></i>{" "}
-                    </Link>
+                    <i className="icon-angle-right"></i>{" "}
                   </div>
                 </div>
               </div>

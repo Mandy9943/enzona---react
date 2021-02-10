@@ -10,26 +10,48 @@ import Config from "../Config/Config";
 import Friends from "../Friends/Friends";
 import Home from "../Home/Home";
 import Notification from "../Notification/Notification";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "./Rotes.css";
+import TransferComponent from "../HomePages/TransferPage/TransferPage";
+import Navigation from "../Navigation/Navigation";
+import ElectricityPage from "../HomePages/ElectricityPage/ElectricityPage";
+import GiftPage from "../HomePages/GiftPage/GiftPage";
+import FriendAdd from "../Friends/FriendAdd/FriendAdd";
+import CardsBalance from "../BalancePage/CardsBalance/CardsBalance";
+import Balance from "../BalancePage/Balance";
+import Operations from "../OperationsPage/Operations";
+import CardsOperations from "../OperationsPage/CardsOperations/CardsOperations";
+import DonationPage from "../HomePages/DonationPage/DonationPage";
 
 const Routes: React.FC<RouteComponentProps> = (props) => {
   return (
-    <TransitionGroup>
-      <CSSTransition
-        key={props.location.key}
-        timeout={500}
-        classNames="animate"
-      >
-        <Switch>
-          <Redirect exact={true} from="/" to="/home" />
-          <Route path="/home" component={Home} />
-          <Route path="/notifications" component={Notification} />
-          <Route path="/friends" component={Friends} />
-          <Route path="/config" component={Config} />
-        </Switch>
-      </CSSTransition>
-    </TransitionGroup>
+    <Switch>
+      <Redirect exact={true} from="/" to="/home" />
+      <Route path="/home">
+        <Home />
+        <Navigation />
+      </Route>
+      <Route path="/notifications">
+        <Notification />
+        <Navigation />
+      </Route>
+      <Route path="/friends">
+        <Friends />
+        <Navigation />
+      </Route>
+      <Route path="/config">
+        <Config />
+        <Navigation />
+      </Route>
+      <Route path="/transfer" component={TransferComponent} />
+      <Route path="/electricity" component={ElectricityPage} />
+      <Route path="/gifts" component={GiftPage} />
+      <Route path="/friend-add" component={FriendAdd} />
+      <Route path="/balance-cards" component={CardsBalance} />
+      <Route path="/operations-cards" component={CardsOperations} />
+      <Route path="/donations" component={DonationPage} />
+      <Route path="/balance/:cardId" component={Balance} />
+      <Route path="/operations/:cardId" component={Operations} />
+    </Switch>
   );
 };
 

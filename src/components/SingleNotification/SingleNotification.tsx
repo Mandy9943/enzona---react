@@ -1,6 +1,6 @@
 import React from "react";
-import { IUserNotification } from "../../../dataTypes";
-
+import { IUserNotification } from "../../dataTypes";
+import "./SingleNotification.css";
 const SingleNotification: React.FC<IUserNotification> = (props) => {
   return (
     <div className="single-notification">
@@ -9,7 +9,7 @@ const SingleNotification: React.FC<IUserNotification> = (props) => {
       </div>
       <div className="content-single-notification">
         <div className="text-header-single-notification">
-          <p>{props.notification}</p>
+          <p className="notification">{props.notification}</p>
           <p className="price-header-single-notification">
             +{props.money_amount}
             <span className="price-currency"> {props.currency}</span>

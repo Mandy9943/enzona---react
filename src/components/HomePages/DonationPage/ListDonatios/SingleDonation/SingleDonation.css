@@ -1,0 +1,26 @@
+.single-donation {
+  height: 43px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 12px;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 1px solid var(--very-light-gray);
+  padding-bottom: 7px;
+}
+.donation-content {
+  line-height: 18px;
+}
+.donation-name {
+  font-size: 15px;
+}
+
+.donation-date {
+  font-size: 12px;
+  color: var(--gray);
+}
+.single-donation i {
+  font-size: 20px;
+  color: var(--gray);
+}

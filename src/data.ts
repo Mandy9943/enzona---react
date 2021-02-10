@@ -19,6 +19,7 @@ export const users: IUser[] = [
     user_bank_acounts: {
       accounts: [
         {
+          id: 4515,
           bank: "Banco Metropolitano",
           name: "Armando Martin",
           currency: "USD",
@@ -62,6 +63,7 @@ export const users: IUser[] = [
           ],
         },
         {
+          id: 45152,
           bank: "Banco Metropolitano",
           name: "Armando Martin",
           currency: "CUP",
