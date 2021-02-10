@@ -1,6 +1,6 @@
 import React from "react";
 import "./SingleOperation.css";
-import { currency_type, operation_way_type } from "../../../../dataTypes";
+import { currency_type, operation_way_type } from "../../../../../dataTypes";
 interface IProps {
   image: string;
   operation: string;

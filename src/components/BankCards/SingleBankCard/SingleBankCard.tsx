@@ -8,8 +8,16 @@ interface IProps extends IUserBankAccount {
 }
 
 const SingleBankCard: React.FC<IProps> = (props) => {
-  let card_num = props.number.toString();
+  let card_num: string = props.number.toString();
   card_num = card_num.substring(12);
+
+  let name: string;
+  if (props.name.length > 20) {
+    name = props.name.substring(0, 20);
+    name = name + " ...";
+  } else {
+    name = props.name;
+  }
 
   return (
     <div className="single-bank-card">
@@ -20,7 +28,7 @@ const SingleBankCard: React.FC<IProps> = (props) => {
           <div className="number">**** **** **** {card_num}</div>
         </div>
         <div className="footer-card">
-          <div className="name">{props.name}</div>
+          <div className="name">{name}</div>
           <div className="currency">{props.currency}</div>
         </div>
       </Link>

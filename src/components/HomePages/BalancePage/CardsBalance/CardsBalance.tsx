@@ -1,7 +1,7 @@
 import React from "react";
-import BanckCards from "../../BankCards/BanckCards";
-import SingleBankCard from "../../BankCards/SingleBankCard/SingleBankCard";
-import HeaderBar from "../../HeaderBar/HeaderBar";
+import BanckCards from "../../../BankCards/BanckCards";
+import SingleBankCard from "../../../BankCards/SingleBankCard/SingleBankCard";
+import HeaderBar from "../../../HeaderBar/HeaderBar";
 
 const CardsBalance: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const CardsBalance: React.FC = () => {
         <SingleBankCard
           id={451515}
           bank="Banco Metropolitano"
-          name="Armando Cesar Martin Calderon"
+          name="Carlos de la Rosa Martinez Gonzales"
           currency="CUP"
           number={9894455652124849}
           active={false}

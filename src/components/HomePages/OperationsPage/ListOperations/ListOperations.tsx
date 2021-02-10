@@ -1,5 +1,5 @@
 import React from "react";
-import ListNotification from "../../ListNotification/ListNotification";
+import ListNotification from "../../../ListNotification/ListNotification";
 import "./ListOperations.css";
 import SingleOperation from "./SingleOpeartion/SingleOperation";
 

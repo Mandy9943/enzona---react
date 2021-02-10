@@ -16,10 +16,10 @@ import Navigation from "../Navigation/Navigation";
 import ElectricityPage from "../HomePages/ElectricityPage/ElectricityPage";
 import GiftPage from "../HomePages/GiftPage/GiftPage";
 import FriendAdd from "../Friends/FriendAdd/FriendAdd";
-import CardsBalance from "../BalancePage/CardsBalance/CardsBalance";
-import Balance from "../BalancePage/Balance";
-import Operations from "../OperationsPage/Operations";
-import CardsOperations from "../OperationsPage/CardsOperations/CardsOperations";
+import CardsBalance from "../HomePages/BalancePage/CardsBalance/CardsBalance";
+import Balance from "../HomePages/BalancePage/Balance";
+import Operations from "../HomePages/OperationsPage/Operations";
+import CardsOperations from "../HomePages/OperationsPage/CardsOperations/CardsOperations";
 import DonationPage from "../HomePages/DonationPage/DonationPage";
 
 const Routes: React.FC<RouteComponentProps> = (props) => {

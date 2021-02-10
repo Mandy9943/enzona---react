@@ -1,7 +1,7 @@
 import React from "react";
-import BanckCards from "../../BankCards/BanckCards";
-import SingleBankCard from "../../BankCards/SingleBankCard/SingleBankCard";
-import HeaderBar from "../../HeaderBar/HeaderBar";
+import BanckCards from "../../../BankCards/BanckCards";
+import SingleBankCard from "../../../BankCards/SingleBankCard/SingleBankCard";
+import HeaderBar from "../../../HeaderBar/HeaderBar";
 
 const CardsOperations: React.FC = () => {
   return (

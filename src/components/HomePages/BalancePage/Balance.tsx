@@ -1,7 +1,7 @@
 import React from "react";
-import HeaderBar from "../HeaderBar/HeaderBar";
-import { OneOfListOPtions, OptionList } from "../Options/Options";
-import OptionsPanel from "../OptionsPanel/OptionsPanel";
+import HeaderBar from "../../HeaderBar/HeaderBar";
+import { OneOfListOPtions, OptionList } from "../../Options/Options";
+import OptionsPanel from "../../OptionsPanel/OptionsPanel";
 import "./Balance.css";
 const Balance: React.FC = () => {
   return (
