@@ -74,10 +74,7 @@ const Home: React.FC<{}> = () => {
           </li>
           <li className="panel-body-list-item">
             <Link to="/electricity">
-              <img
-                src="dist/images/transferir_min.png"
-                alt="Foto de tranferir dinero mediante tarjetas"
-              />
+              <img src="dist/images/transferir_min.png" alt="Foto de bulevar" />
             </Link>
             <div className="caption">Bulevar</div>
           </li>
