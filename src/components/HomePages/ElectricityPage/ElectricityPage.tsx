@@ -3,9 +3,10 @@ import HeaderBar from "../../HeaderBar/HeaderBar";
 import { OneOfListOPtions, OptionList } from "../../Options/Options";
 import OptionsPanel from "../../OptionsPanel/OptionsPanel";
 import List from "../../List/List";
+import HomePage from "../HomePage";
 const ElectricityPage: React.FC = () => {
   return (
-    <div>
+    <HomePage>
       <List>
         <HeaderBar
           place="Electricidad"
@@ -31,7 +32,7 @@ const ElectricityPage: React.FC = () => {
         </OptionsPanel>
         <OptionList text="Mis Facturas a Pagar" withoutContent={true} />
       </List>
-    </div>
+    </HomePage>
   );
 };
 

@@ -21,6 +21,7 @@ import Balance from "../HomePages/BalancePage/Balance";
 import Operations from "../HomePages/OperationsPage/Operations";
 import CardsOperations from "../HomePages/OperationsPage/CardsOperations/CardsOperations";
 import DonationPage from "../HomePages/DonationPage/DonationPage";
+import BoulevarPage from "../HomePages/BoulevarPage/BoulevarPage";
 
 const Routes: React.FC<RouteComponentProps> = (props) => {
   return (
@@ -49,6 +50,7 @@ const Routes: React.FC<RouteComponentProps> = (props) => {
       <Route path="/balance-cards" component={CardsBalance} />
       <Route path="/operations-cards" component={CardsOperations} />
       <Route path="/donations" component={DonationPage} />
+      <Route path="/boulevar" component={BoulevarPage} />
       <Route path="/balance/:cardId" component={Balance} />
       <Route path="/operations/:cardId" component={Operations} />
     </Switch>

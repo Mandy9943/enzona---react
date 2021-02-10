@@ -73,7 +73,7 @@ const Home: React.FC<{}> = () => {
             <div className="caption">Electricidad</div>
           </li>
           <li className="panel-body-list-item">
-            <Link to="/electricity">
+            <Link to="/boulevar">
               <img src="dist/images/transferir_min.png" alt="Foto de bulevar" />
             </Link>
             <div className="caption">Bulevar</div>

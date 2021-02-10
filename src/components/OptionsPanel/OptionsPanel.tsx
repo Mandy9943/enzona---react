@@ -7,11 +7,11 @@ const OptionsPanel: React.FC<IProps> = (props) => {
   return (
     <React.Fragment>
       {props.short ? (
-        <div className="firsts-options" style={{ marginTop: "-100px" }}>
+        <div className="firsts-options">{props.children}</div>
+      ) : (
+        <div className="firsts-options" style={{ paddingTop: "40px" }}>
           {props.children}
         </div>
-      ) : (
-        <div className="firsts-options">{props.children}</div>
       )}
     </React.Fragment>
   );

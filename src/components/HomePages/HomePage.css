@@ -1,0 +1,9 @@
+.home-page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+}

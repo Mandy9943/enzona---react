@@ -2,10 +2,11 @@ import React from "react";
 import HeaderBar from "../../HeaderBar/HeaderBar";
 import { OneOfListOPtions, OptionList } from "../../Options/Options";
 import OptionsPanel from "../../OptionsPanel/OptionsPanel";
+import HomePage from "../HomePage";
 import "./Balance.css";
 const Balance: React.FC = () => {
   return (
-    <div className="balance">
+    <HomePage>
       <HeaderBar place="Saldo" backPath="/balance-cards" />
       <div className="balance-header">
         <div className="balance-number">
@@ -42,7 +43,7 @@ const Balance: React.FC = () => {
         text="Operaciones"
         link="/operations/4216"
       ></OptionList>
-    </div>
+    </HomePage>
   );
 };
 

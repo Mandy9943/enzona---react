@@ -7,7 +7,6 @@ const Config: React.FC<{}> = () => {
   return (
     <div>
       <PanelHeader place="config" />
-      <div className="config-options"></div>
       <OptionsPanel>
         <OneOfListOPtions
           icon="icon-list_alt"
