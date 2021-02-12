@@ -25,7 +25,7 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 :root {
-  --blue: #0275d8;
+  --blue: #356ca8;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;

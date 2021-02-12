@@ -1,7 +1,5 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
-import { IUserInfo } from "../../dataTypes";
-import withLoader from "../WithLoader/WithLoader";
+
 import "./PanelHeader.css";
 
 const PanelHeader: React.FC = (props) => {

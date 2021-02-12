@@ -18,83 +18,83 @@ const user_info: IUserInfo = {
   phone: 58379931,
 };
 
-const useer_login: IUserLogin = {
+export const useer_login: IUserLogin = {
   tel_ema: "58378451",
   password: "1234",
 };
 
-const user_bank_acounts: IUserBankAccount[] = [
-    {
-      id: 4515,
-      bank: "Banco Metropolitano",
-      name: "Armando Martin",
-      currency: "USD",
-      number: 93255265231241,
-      active: false,
-      avilable_money: 60,
-      contable_money: 60,
-      card: "BanMet 685",
-      number_account: 806040503020,
-    },
-    {
-      id: 45152,
-      bank: "Banco Metropolitano",
-      name: "Armando Martin",
-      currency: "CUP",
-      number: 906026524522356,
-      active: false,
-      avilable_money: 2000,
-      contable_money: 2000,
-      card: "BanMet 685",
-      number_account: 806040503020,
-    },
-  ],
-  user_notifications: IUserNotification[] = [
-    {
-      name: "Armando Martin Calderon",
-      money_amount: 250,
-      date: "6/6/2020",
-      status: "Aceptada",
-      hour: "11.:52 pm",
-      readed: true,
-      image: "dist/images/avatar2.png",
-      notification: "Tarnsferecnia recibida",
-      currency: "cup",
-    },
-    {
-      name: "Armando Martin Calderon",
-      money_amount: 250,
-      date: "6/6/2020",
-      status: "Aceptada",
-      hour: "11.:52 pm",
-      readed: true,
-      image: "dist/images/avatar2.png",
-      notification: "Tarnsferecnia recibida",
-      currency: "cup",
-    },
-    {
-      name: "Armando Martin Calderon",
-      money_amount: 250,
-      date: "6/6/2020",
-      status: "Aceptada",
-      hour: "11.:52 pm",
-      readed: true,
-      image: "dist/images/avatar2.png",
-      notification: "Tarnsferecnia recibida",
-      currency: "cup",
-    },
-    {
-      name: "Armando Martin Calderon",
-      money_amount: 250,
-      date: "6/6/2020",
-      status: "Aceptada",
-      hour: "11.:52 pm",
-      readed: true,
-      image: "dist/images/avatar2.png",
-      notification: "Tarnsferecnia recibida",
-      currency: "cup",
-    },
-  ];
+export const user_bank_acounts: IUserBankAccount[] = [
+  {
+    id: 4515,
+    bank: "Banco Metropolitano",
+    name: "Armando Martin",
+    currency: "USD",
+    number: 93255265231241,
+    active: false,
+    avilable_money: 60,
+    contable_money: 60,
+    card: "BanMet 685",
+    number_account: 806040503020,
+  },
+  {
+    id: 45152,
+    bank: "Banco Metropolitano",
+    name: "Armando Martin",
+    currency: "CUP",
+    number: 906026524522356,
+    active: false,
+    avilable_money: 2000,
+    contable_money: 2000,
+    card: "BanMet 685",
+    number_account: 806040503020,
+  },
+];
+const user_notifications: IUserNotification[] = [
+  {
+    name: "Armando Martin Calderon",
+    money_amount: 250,
+    date: "6/6/2020",
+    status: "Aceptada",
+    hour: "11.:52 pm",
+    readed: true,
+    image: "dist/images/avatar2.png",
+    notification: "Tarnsferecnia recibida",
+    currency: "cup",
+  },
+  {
+    name: "Armando Martin Calderon",
+    money_amount: 250,
+    date: "6/6/2020",
+    status: "Aceptada",
+    hour: "11.:52 pm",
+    readed: true,
+    image: "dist/images/avatar2.png",
+    notification: "Tarnsferecnia recibida",
+    currency: "cup",
+  },
+  {
+    name: "Armando Martin Calderon",
+    money_amount: 250,
+    date: "6/6/2020",
+    status: "Aceptada",
+    hour: "11.:52 pm",
+    readed: true,
+    image: "dist/images/avatar2.png",
+    notification: "Tarnsferecnia recibida",
+    currency: "cup",
+  },
+  {
+    name: "Armando Martin Calderon",
+    money_amount: 250,
+    date: "6/6/2020",
+    status: "Aceptada",
+    hour: "11.:52 pm",
+    readed: true,
+    image: "dist/images/avatar2.png",
+    notification: "Tarnsferecnia recibida",
+    currency: "cup",
+  },
+];
 
 /* Operations */
 
@@ -131,7 +131,7 @@ const operation1: IOperation[] = [
   },
 ];
 
-const operation2: IOperation[] = [
+export const operation2: IOperation[] = [
   {
     name: "Nómina",
     amount: 200,
@@ -164,7 +164,7 @@ const operation2: IOperation[] = [
   },
 ];
 
-const last_operations: IOperation[] = operation1;
+export const last_operations: IOperation[] = operation1;
 
 /* Faking a time to the server response (Faking API time to response) */
 const wait = (milliseconds: number): Promise<void> => {
@@ -172,11 +172,11 @@ const wait = (milliseconds: number): Promise<void> => {
 };
 
 export const getUserInfo = async (): Promise<IUserInfo> => {
-  await wait(1000);
+  await wait(10);
   return user_info;
 };
 
 export const getUserNotifications = async (): Promise<IUserNotification[]> => {
-  await wait(1000);
+  await wait(10);
   return user_notifications;
 };

@@ -58,6 +58,7 @@ export interface IUserNotification {
 
 /* Tipos para la app */
 
+/* Redux UserInfo */
 export enum UserInfoActionTypes {
   GET = "USERINFO/GETALL",
   LOADING = "USERINFO/LOADING",
@@ -78,3 +79,28 @@ export interface IUserInfoState {
   readonly user_info: IUserInfo;
   readonly loading: boolean;
 }
+
+/* Notifications */
+
+export enum NotificationsActionTypes {
+  GET = "NOTIFICATIONS/GETALL",
+  LOADING = "NOTIFICATIONS/LOADING",
+}
+
+export interface INotificationGetAllAction {
+  type: NotificationsActionTypes.GET;
+  notifications: IUserNotification[];
+}
+
+export interface INotificationLoadingAction {
+  type: NotificationsActionTypes.LOADING;
+}
+
+export interface INotificationsState {
+  notifications: IUserNotification[];
+  loading: boolean;
+}
+
+export type NotificationsActions =
+  | INotificationGetAllAction
+  | INotificationLoadingAction;

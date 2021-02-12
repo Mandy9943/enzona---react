@@ -7,10 +7,10 @@ const withLoader = <P extends object>(
   Component: React.ComponentType<P>
 ): React.FC<P & IProps> => ({ loading, ...props }: IProps) =>
   loading ? (
-    <div className="loader-overlay">
-      <div className="loader-circle-wrap">
-        <div className="loader-circle" />
-      </div>
+    <div className="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
   ) : (
     <Component {...(props as P)} />

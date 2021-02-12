@@ -1,11 +1,25 @@
 import * as React from "react";
 import Bar from "../Bar/Bar";
 import HeaderBar from "../HeaderBar/HeaderBar";
-import ListNotification from "../ListNotification/ListNotification";
+import ListNotification from "./ListNotification/ListNotification";
 import "./Notification.css";
-import SingleNotification from "../SingleNotification/SingleNotification";
 import List from "../List/List";
-const Notification: React.FC = () => {
+import { IApplicationState } from "../../Store";
+import { getNotifications } from "../../actions/NotificationAction";
+import { connect } from "react-redux";
+import { IUserNotification } from "../../dataTypes";
+
+interface IProps {
+  notifications: IUserNotification[];
+  loading: boolean;
+  getNotifications: typeof getNotifications;
+}
+
+const Notification: React.FC<IProps> = (props) => {
+  React.useEffect(() => {
+    props.getNotifications();
+  }, []);
+
   return (
     <List>
       <HeaderBar place="Notificaciones" />
@@ -14,22 +28,27 @@ const Notification: React.FC = () => {
           <p>Marcar todas como leídas</p>
         </div>
       </Bar>
-      <ListNotification>
+      <ListNotification
+        notifications={props.notifications}
+        loading={props.loading}
+      >
         {" "}
-        <SingleNotification
-          image="dist/images/avatar2.png"
-          readed={true}
-          name="Armando Martin Calderon"
-          money_amount={250}
-          date="12/12/2021"
-          currency="cup"
-          status="Aceptada"
-          hour="5:34 pm"
-          notification="Tranferencia recibida"
-        />
       </ListNotification>
     </List>
   );
 };
 
-export default Notification;
+const mapStateToProps = (store: IApplicationState) => {
+  return {
+    loading: store.notifications.loading,
+    notifications: store.notifications.notifications,
+  };
+};
+
+const mapDispatchToProps = (dispath: any) => {
+  return {
+    getNotifications: () => dispath(getNotifications()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Notification);

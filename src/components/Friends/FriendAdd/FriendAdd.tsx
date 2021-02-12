@@ -1,12 +1,13 @@
 import React from "react";
 import HeaderBar from "../../HeaderBar/HeaderBar";
+import HomePage from "../../HomePages/HomePage";
 import List from "../../List/List";
 import { OneOfListOPtions } from "../../Options/Options";
 import OptionsPanel from "../../OptionsPanel/OptionsPanel";
 
 const FriendAdd: React.FC = () => {
   return (
-    <List>
+    <HomePage>
       <HeaderBar backPath="/friends/friend" place="Agreagar amigo" />
       <OptionsPanel short={true}>
         <OneOfListOPtions
@@ -29,7 +30,7 @@ const FriendAdd: React.FC = () => {
           withoutBorder={true}
         />
       </OptionsPanel>
-    </List>
+    </HomePage>
   );
 };
 

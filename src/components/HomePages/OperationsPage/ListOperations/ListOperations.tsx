@@ -1,12 +1,12 @@
 import React from "react";
-import ListNotification from "../../../ListNotification/ListNotification";
+import HomePage from "../../HomePage";
 import "./ListOperations.css";
 import SingleOperation from "./SingleOpeartion/SingleOperation";
 
 const ListOperations: React.FC = () => {
   return (
     <React.Fragment>
-      <ListNotification coverFromToptoBottom={true}>
+      <HomePage>
         <SingleOperation
           image="/dist/images/avatar2.png"
           money_amount={250}
@@ -25,7 +25,7 @@ const ListOperations: React.FC = () => {
           operationWay="Débito"
           marginTop="-55px"
         />
-      </ListNotification>
+      </HomePage>
     </React.Fragment>
   );
 };
