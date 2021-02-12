@@ -1,0 +1,27 @@
+.single-market {
+  height: 17%;
+  min-height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--light-gray);
+  box-shadow: 0 4px 5px #969992;
+
+  display: flex;
+}
+
+.logo-market {
+  width: 28%;
+  max-width: 100px;
+}
+.market-content {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.low-text-market {
+  font-size: 12px;
+  color: var(--gray);
+}

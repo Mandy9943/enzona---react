@@ -1,0 +1,60 @@
+.panel-header-content {
+  padding: 8px 12px;
+}
+
+.panel-header-person {
+  color: white;
+}
+
+.panel-header-perfil {
+  padding-top: 8px;
+  display: flex;
+}
+
+.panel-header-user-image {
+  position: relative;
+  width: 70px;
+}
+.panel-header-user-image img {
+  width: 70px;
+  border-radius: 50%;
+}
+.panel-header-user-image .user-error {
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--danger);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.panel-header-user-general-info {
+  margin-left: 10px;
+  position: relative;
+  flex: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.panel-header-user-general-info .fullname {
+  font-size: 15px;
+}
+.panel-header-user-general-info .username,
+.tel {
+  font-size: 12px;
+}
+
+.panel-header-user-general-info .more-info i {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 30px;
+  padding: 8px 12px;
+  color: white;
+}

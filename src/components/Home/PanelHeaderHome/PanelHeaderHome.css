@@ -1,0 +1,20 @@
+.panel-header-list {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-header-list-item i {
+  font-size: 60px;
+}
+
+.panel-header-list-item a {
+  color: white;
+}
+.header-panel-item-caption {
+  margin-top: 7px;
+}

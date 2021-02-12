@@ -3,7 +3,7 @@ export type bank_type = "Banco Metropolitano" | "BANDEC" | "BPA";
 export type currency_type = "CUP" | "USD";
 export type operation_way_type = "Crédito" | "Débito";
 
-interface IUserInfo {
+export interface IUserInfo {
   fullname: string;
   img: string;
   username: string;
@@ -11,10 +11,11 @@ interface IUserInfo {
   address: string;
   id_number: number;
   sex: sex_type;
-  birthday: Date;
+  birthday: string;
+  phone: number;
 }
 
-interface IUserLogin {
+export interface IUserLogin {
   tel_ema: string;
   password: string;
 }
@@ -37,10 +38,6 @@ export interface IUserBankAccount {
   contable_money?: number;
   card?: string;
   number_account?: number;
-  last_operations?: IOperation[];
-}
-export interface IUserBankAccounts {
-  accounts: IUserBankAccount[];
 }
 
 export interface IUserNotification {
@@ -55,17 +52,29 @@ export interface IUserNotification {
   hour: string /* Pendiente a revision */;
 }
 
-export interface IUser {
-  user_info: IUserInfo;
-  useer_login: IUserLogin;
-  user_bank_acounts: IUserBankAccounts;
-  user_notifications: IUserNotification[];
-}
-
-export interface IUsers {
-  users: IUser[];
-}
-
 /* Hasta aqui llegan los usuarios */
 
 /* Falta toda la parte del bullvebar */
+
+/* Tipos para la app */
+
+export enum UserInfoActionTypes {
+  GET = "USERINFO/GETALL",
+  LOADING = "USERINFO/LOADING",
+}
+
+export interface IUserInfoGetAllAction {
+  type: UserInfoActionTypes.GET;
+  userInfo: IUserInfo;
+}
+
+export interface IUserInfoLoadingAction {
+  type: UserInfoActionTypes.LOADING;
+}
+
+export type UserInfoAction = IUserInfoGetAllAction | IUserInfoLoadingAction;
+
+export interface IUserInfoState {
+  readonly user_info: IUserInfo;
+  readonly loading: boolean;
+}

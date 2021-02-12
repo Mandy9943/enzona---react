@@ -3,10 +3,26 @@ import { OneOfListOPtions, OptionList } from "../Options/Options";
 import OptionsPanel from "../OptionsPanel/OptionsPanel";
 import PanelHeader from "../PanelHeader/PanelHeader";
 import "./Config.css";
-const Config: React.FC<{}> = () => {
+import { getUserInfo } from "../../actions/UserInfoAction";
+import { IUserInfo } from "../../dataTypes";
+import { IApplicationState } from "../../Store";
+import { connect } from "react-redux";
+import PanelHeaderConfig from "./PanelHeaderConfig/PanelHeaderConfig";
+interface IProps {
+  getUserInfo: typeof getUserInfo;
+  loading: boolean;
+  userInfo: IUserInfo;
+}
+
+const Config: React.FC<IProps> = (props) => {
+  React.useEffect(() => {
+    props.getUserInfo();
+  }, []); // eslint-disable-next-line
   return (
     <div>
-      <PanelHeader place="config" />
+      <PanelHeader>
+        <PanelHeaderConfig loading={props.loading} userInfo={props.userInfo} />
+      </PanelHeader>
       <OptionsPanel>
         <OneOfListOPtions
           icon="icon-list_alt"
@@ -44,4 +60,17 @@ const Config: React.FC<{}> = () => {
   );
 };
 
-export default Config;
+const mapStateToProps = (sotre: IApplicationState) => {
+  return {
+    loading: sotre.userInfo.loading,
+    userInfo: sotre.userInfo.user_info,
+  };
+};
+
+const mapDispatchToProps = (dispatch: any) => {
+  return {
+    getUserInfo: () => dispatch(getUserInfo()),
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Config);

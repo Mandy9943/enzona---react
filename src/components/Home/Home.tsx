@@ -2,11 +2,14 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import PanelHeader from "../PanelHeader/PanelHeader";
 import "./Home.css";
+import PanelHeaderHome from "./PanelHeaderHome/PanelHeaderHome";
 
 const Home: React.FC<{}> = () => {
   return (
     <div className="home-panel wrapper">
-      <PanelHeader place="home" />
+      <PanelHeader>
+        <PanelHeaderHome />
+      </PanelHeader>
       <div className="panel-body">
         <ul className="panel-body-list">
           <li className="panel-body-list-item">

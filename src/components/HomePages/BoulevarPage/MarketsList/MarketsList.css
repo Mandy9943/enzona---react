@@ -1,0 +1,6 @@
+.market-list {
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+  padding: 8px 4px;
+}
